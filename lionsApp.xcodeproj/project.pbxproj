@@ -218,6 +218,7 @@
 				TargetAttributes = {
 					13DD26B91EBA455200E7C293 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 84VP9GYA85;
 						ProvisioningStyle = Automatic;
 					};
 					13DD26CF1EBA455200E7C293 = {
@@ -460,11 +461,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 84VP9GYA85;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = lionsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COHS.lionsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,11 +481,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 84VP9GYA85;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = lionsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COHS.lionsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
