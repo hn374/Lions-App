@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,14 +20,14 @@
                         <viewControllerLayoutGuide type="bottom" id="SoC-p7-eVd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dux-jl-fvJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BellSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-2B-qab">
-                                <rect key="frame" x="0.0" y="111" width="375" height="486"/>
+                                <rect key="frame" x="0.0" y="111" width="414" height="555"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell Schedule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-5M-y3K">
-                                <rect key="frame" x="104.5" y="56" width="166" height="31"/>
+                                <rect key="frame" x="124" y="56" width="166" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="04q-H4-8CP"/>
                                 </constraints>
@@ -60,18 +61,20 @@
                         <viewControllerLayoutGuide type="bottom" id="Bh6-bp-m8Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pEq-6E-Qni">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstFloor" translatesAutoresizingMaskIntoConstraints="NO" id="HZO-uC-qbm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="283"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HZO-uC-qbm" secondAttribute="height" multiplier="8:6" id="NJX-2p-eGL"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HZO-uC-qbm" firstAttribute="leading" secondItem="pEq-6E-Qni" secondAttribute="leading" id="CPw-tU-kDh"/>
                             <constraint firstAttribute="trailing" secondItem="HZO-uC-qbm" secondAttribute="trailing" id="JTZ-RJ-W9w"/>
-                            <constraint firstItem="Bh6-bp-m8Q" firstAttribute="top" secondItem="HZO-uC-qbm" secondAttribute="bottom" priority="999" constant="271" id="nLw-MZ-epn"/>
                             <constraint firstItem="HZO-uC-qbm" firstAttribute="top" secondItem="fPL-RW-8qf" secondAttribute="bottom" id="z4w-UV-VpC"/>
                         </constraints>
                     </view>
@@ -90,11 +93,11 @@
                         <viewControllerLayoutGuide type="bottom" id="g3P-10-COY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mva-jJ-cNy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2017-05-30 at 10.25.38 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Jwc-J8-6kA">
-                                <rect key="frame" x="37" y="42" width="301" height="503"/>
+                                <rect key="frame" x="41" y="42" width="332" height="572"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,7 +140,7 @@
             <objects>
                 <tableViewController id="UE1-8e-5zD" customClass="FirstViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9jl-ee-yd7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
