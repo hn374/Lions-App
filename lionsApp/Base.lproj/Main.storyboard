@@ -36,6 +36,9 @@
                                 <state key="normal" title="X Schedule">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="xScheduleTapped:" destination="e8h-v8-u5O" eventType="touchUpInside" id="AG8-lG-fMx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbZ-J4-hTn">
                                 <rect key="frame" x="5" y="476" width="150" height="35"/>
@@ -44,6 +47,9 @@
                                 <state key="normal" title="A Schedule">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="aScheduleTapped:" destination="e8h-v8-u5O" eventType="touchUpInside" id="LuQ-z9-SH8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yJ-KQ-B67">
                                 <rect key="frame" x="163" y="476" width="150" height="35"/>
@@ -52,6 +58,9 @@
                                 <state key="normal" title="D Schedule">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="dScheduleTapped:" destination="e8h-v8-u5O" eventType="touchUpInside" id="DF5-Ku-F0L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgB-X9-TJe">
                                 <rect key="frame" x="162.5" y="433" width="149.5" height="35"/>
@@ -60,6 +69,9 @@
                                 <state key="normal" title="M Schedule">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="mScheduleTapped:" destination="e8h-v8-u5O" eventType="touchUpInside" id="je1-cg-TpU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSd-rX-5mS">
                                 <rect key="frame" x="85" y="390" width="150" height="35"/>
@@ -68,6 +80,9 @@
                                 <state key="normal" title="R Schedule">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="rScheduleTapped:" destination="e8h-v8-u5O" eventType="touchUpInside" id="wQC-kt-0te"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,6 +111,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dyb-Q0-QXM"/>
+                    <connections>
+                        <outlet property="imageView" destination="vCV-5h-JDb" id="Uc1-qy-UqM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuJ-jE-i5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
