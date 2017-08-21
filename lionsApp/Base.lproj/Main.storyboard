@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,14 +20,14 @@
                         <viewControllerLayoutGuide type="bottom" id="SoC-p7-eVd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dux-jl-fvJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BellSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-2B-qab">
-                                <rect key="frame" x="0.0" y="111" width="375" height="486"/>
+                                <rect key="frame" x="0.0" y="111" width="320" height="387"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell Schedule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-5M-y3K">
-                                <rect key="frame" x="104.5" y="56" width="166" height="31"/>
+                                <rect key="frame" x="77" y="56" width="166" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="04q-H4-8CP"/>
                                 </constraints>
@@ -61,66 +61,86 @@
                         <viewControllerLayoutGuide type="bottom" id="Bh6-bp-m8Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pEq-6E-Qni">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstFloor" translatesAutoresizingMaskIntoConstraints="NO" id="HZO-uC-qbm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="281.5"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="240.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HZO-uC-qbm" secondAttribute="height" multiplier="8:6" id="NJX-2p-eGL"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-KY-vLY">
-                                <rect key="frame" x="5" y="512" width="177" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-KY-vLY">
+                                <rect key="frame" x="5" y="433" width="149.5" height="35"/>
                                 <color key="backgroundColor" red="0.91807263962765961" green="0.25632534754813441" blue="0.22892071556048366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="DvA-KY-vLY" secondAttribute="height" multiplier="5:2" id="W8Y-X3-xlM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                 <state key="normal" title="1st Floor">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="firstFloorTapped:" destination="Fq3-qf-SEc" eventType="touchUpInside" id="Ed1-6e-2O8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RS2-0S-YhC">
-                                <rect key="frame" x="5" y="565" width="177" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RS2-0S-YhC">
+                                <rect key="frame" x="5" y="476" width="149.5" height="35"/>
                                 <color key="backgroundColor" red="0.91807263959999996" green="0.25632534750000002" blue="0.22892071559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                 <state key="normal" title="3rd Floor">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="thirdFloorTapped:" destination="Fq3-qf-SEc" eventType="touchUpInside" id="Xun-OF-byl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu2-Ae-B2P">
-                                <rect key="frame" x="190" y="565" width="177" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu2-Ae-B2P">
+                                <rect key="frame" x="162.5" y="476" width="149.5" height="35"/>
                                 <color key="backgroundColor" red="0.91807263959999996" green="0.25632534750000002" blue="0.22892071559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                 <state key="normal" title="Basement">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="basementTapped:" destination="Fq3-qf-SEc" eventType="touchUpInside" id="gsn-mI-QoC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-Sk-3fJ">
-                                <rect key="frame" x="190" y="512" width="177" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-Sk-3fJ">
+                                <rect key="frame" x="162.5" y="433" width="149.5" height="35"/>
                                 <color key="backgroundColor" red="0.91807263959999996" green="0.25632534750000002" blue="0.22892071559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                 <state key="normal" title="2nd Floor">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="secondFloorTapped:" destination="Fq3-qf-SEc" eventType="touchUpInside" id="sUB-B0-UNy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Tu2-Ae-B2P" firstAttribute="top" secondItem="iFS-Sk-3fJ" secondAttribute="bottom" constant="8" id="29n-Cv-uL0"/>
+                            <constraint firstItem="Bh6-bp-m8Q" firstAttribute="top" secondItem="RS2-0S-YhC" secondAttribute="bottom" constant="8" id="45V-dl-ncI"/>
+                            <constraint firstItem="iFS-Sk-3fJ" firstAttribute="width" secondItem="DvA-KY-vLY" secondAttribute="width" id="5s0-1f-Ulc"/>
                             <constraint firstItem="HZO-uC-qbm" firstAttribute="leading" secondItem="pEq-6E-Qni" secondAttribute="leading" id="CPw-tU-kDh"/>
+                            <constraint firstItem="iFS-Sk-3fJ" firstAttribute="leading" secondItem="DvA-KY-vLY" secondAttribute="trailing" constant="8" id="DGZ-Fi-wB9"/>
+                            <constraint firstItem="RS2-0S-YhC" firstAttribute="height" secondItem="Tu2-Ae-B2P" secondAttribute="height" id="EAl-ue-zEW"/>
                             <constraint firstAttribute="trailing" secondItem="HZO-uC-qbm" secondAttribute="trailing" id="JTZ-RJ-W9w"/>
-                            <constraint firstItem="Tu2-Ae-B2P" firstAttribute="width" secondItem="DvA-KY-vLY" secondAttribute="width" id="O1R-lM-0oq"/>
-                            <constraint firstItem="iFS-Sk-3fJ" firstAttribute="height" secondItem="DvA-KY-vLY" secondAttribute="height" id="OEe-7E-cdN"/>
-                            <constraint firstItem="Tu2-Ae-B2P" firstAttribute="height" secondItem="DvA-KY-vLY" secondAttribute="height" id="Tc7-Fp-vcd"/>
-                            <constraint firstItem="iFS-Sk-3fJ" firstAttribute="width" secondItem="DvA-KY-vLY" secondAttribute="width" id="dVb-Mj-ae3"/>
-                            <constraint firstItem="RS2-0S-YhC" firstAttribute="width" secondItem="DvA-KY-vLY" secondAttribute="width" id="stP-R4-qPf"/>
-                            <constraint firstItem="RS2-0S-YhC" firstAttribute="height" secondItem="DvA-KY-vLY" secondAttribute="height" id="yrS-R8-gUT"/>
+                            <constraint firstItem="Bh6-bp-m8Q" firstAttribute="top" secondItem="Tu2-Ae-B2P" secondAttribute="bottom" constant="8" id="MgH-vc-Te3"/>
+                            <constraint firstItem="iFS-Sk-3fJ" firstAttribute="height" secondItem="DvA-KY-vLY" secondAttribute="height" id="WdD-hd-ahK"/>
+                            <constraint firstItem="Tu2-Ae-B2P" firstAttribute="leading" secondItem="RS2-0S-YhC" secondAttribute="trailing" constant="8" id="aFp-HA-qzv"/>
+                            <constraint firstItem="RS2-0S-YhC" firstAttribute="top" secondItem="DvA-KY-vLY" secondAttribute="bottom" constant="8" id="fTi-eR-Rgg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iFS-Sk-3fJ" secondAttribute="trailing" constant="-8" id="iRe-6i-ebR"/>
+                            <constraint firstItem="RS2-0S-YhC" firstAttribute="leading" secondItem="pEq-6E-Qni" secondAttribute="leadingMargin" constant="-11" id="kws-Tt-19c"/>
+                            <constraint firstItem="RS2-0S-YhC" firstAttribute="width" secondItem="Tu2-Ae-B2P" secondAttribute="width" id="tXR-qk-2eV"/>
+                            <constraint firstItem="DvA-KY-vLY" firstAttribute="leading" secondItem="pEq-6E-Qni" secondAttribute="leadingMargin" constant="-11" id="wgL-6u-YYg"/>
                             <constraint firstItem="HZO-uC-qbm" firstAttribute="top" secondItem="fPL-RW-8qf" secondAttribute="bottom" id="z4w-UV-VpC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tu2-Ae-B2P" secondAttribute="trailing" constant="-8" id="z9e-mZ-lFd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uBV-oR-gDY"/>
+                    <connections>
+                        <outlet property="imageView" destination="HZO-uC-qbm" id="lua-b0-dfY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbl-d5-v52" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,11 +155,11 @@
                         <viewControllerLayoutGuide type="bottom" id="g3P-10-COY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mva-jJ-cNy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2017-05-30 at 10.25.38 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Jwc-J8-6kA">
-                                <rect key="frame" x="37" y="42" width="301" height="503"/>
+                                <rect key="frame" x="37" y="42" width="246" height="404"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -182,7 +202,7 @@
             <objects>
                 <tableViewController id="UE1-8e-5zD" customClass="FirstViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9jl-ee-yd7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
