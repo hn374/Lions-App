@@ -10,16 +10,27 @@ import UIKit
 
 class LunchViewController: UIViewController {
 
+    @IBOutlet var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "Lunch Menu"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func deliButtonTapped(_ sender: UIButton) {
+        imageView.image = #imageLiteral(resourceName: "deliMenu")
+    }
+    
+    @IBAction func grillButtonTapped(_ sender: UIButton) {
+        imageView.image = #imageLiteral(resourceName: "grillMenu")
+    }
+    
+    @IBAction func pizzaButtonTapped(_ sender: Any) {
+        imageView.image = #imageLiteral(resourceName: "pizzaMenu")
+    }
 
 }
